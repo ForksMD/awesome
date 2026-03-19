@@ -138,7 +138,7 @@ capi.client.connect_signal("property::shape_client_clip", shape.update.clip)
 capi.client.connect_signal("property::shape_client_input", shape.update.input)
 capi.client.connect_signal("property::size", shape.update.all)
 capi.client.connect_signal("property::border_width", shape.update.all)
-capi.client.connect_signal("internal::update_shapes", shape.update.all)
+capi.client.connect_signal("internal::update_shapes", shape.update.input)
 
 return shape
 
